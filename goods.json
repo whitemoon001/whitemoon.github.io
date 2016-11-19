@@ -1,0 +1,430 @@
+[
+	{
+		"goodsbig":"listImg/p1.jpg",
+		"goodsdsc":"",
+		"goodsname":"USB-C至HDMI多功能转接器",
+		"goodsprice":"149",
+		"goodsdel":"",
+		"goodspic":
+			{
+				"pic0":"listImg/p1.jpg"
+			}			
+
+	},
+	{
+		"goodsbig":"listImg/p2.jpg",	
+		"goodsdsc":"",
+		"goodsname":"紫5双向镍氢电池充电器",
+		"goodsprice":"49",	
+		"goodsdel":"",	
+		"goodspic":
+			{
+				"pic0":"listImg/p2.jpg"
+				
+			}		
+	},
+	{
+		"goodsbig":"listImg/p3.jpg",
+		"goodsdsc":"",	
+		"goodsname":"SanDisk 8GB高速存储卡（TF Class10）",
+		"goodsprice":"27.9",	
+		"goodsdel":"",	
+		"goodspic":
+			{
+				"pic0":"listImg/p3.jpg"
+				
+			}		
+	},
+	{
+		"goodsbig":"listImg/p4.jpg",	
+		"goodsdsc":"",
+		"goodsname":"紫5镍氢充电电池",
+		"goodsprice":"49",	
+		"goodsdel":"",	
+		"goodspic":
+			{
+				"pic0":"listImg/p4.jpg"
+				
+			}		
+	},
+	{
+		"goodsbig":"listImg/p5.jpg",	
+		"goodsdsc":"适用于 小米盒子标准版",
+		"goodsname":"小米千兆网线 0.5米",
+		"goodsprice":"9.9",		
+		"goodsdel":"",
+		"goodspic":
+			{
+				"pic0":"listImg/p5.jpg"
+				
+			}		
+	},
+	{
+		"goodsbig":"listImg/p6.jpg",	
+		"goodsdsc":"",		
+		"goodsname":"小米USB充电器（4口）",
+		"goodsprice":"69",	
+		"goodsdel":"",	
+		"goodspic":
+			{
+				"pic0":"listImg/p5.jpg"
+				
+			}		
+	},
+	{
+		"goodsbig":"listImg/p7.jpg",	
+		"goodsdsc":"",		
+		"goodsname":"小米USB充电器（4口）",
+		"goodsprice":"14.9",	
+		"goodsdel":"",	
+		"goodspic":
+			{
+				"pic0":"listImg/p7.jpg"
+				
+			}		
+	},
+	{
+		"goodsbig":"listImg/p8.jpg",	
+		"goodsdsc":"",		
+		"goodsname":"彩虹7号电池（10粒装）",
+		"goodsprice":"9.9",	
+		"goodsdel":"",	
+		"goodspic":
+			{
+				"pic0":"listImg/p8.jpg"
+				
+			}		
+	},
+	{
+		"goodsbig":"listImg/p9.jpg",
+		"goodsdsc":"",			
+		"goodsname":"小米车载充电器",
+		"goodsprice":"49",		
+		"goodsdel":"",
+		"goodspic":
+			{
+				"pic0":"listImg/p9.jpg"
+				
+			}		
+	},
+	{
+		"goodsbig":"listImg/p10.jpg",	
+		"goodsdsc":"",		
+		"goodsname":"青米USB快速充电数据线",
+		"goodsprice":"14.9",	
+		"goodsdel":"",	
+		"goodspic":
+			{
+				"pic0":"listImg/p10.jpg",
+				"pic1":"listImg/p12.jpg",
+				"pic2":"listImg/p13.jpg"
+			}		
+	},
+	{
+		"goodsbig":"listImg/p11.jpg",
+		"goodsdsc":"适用于 小米盒子标准版",			
+		"goodsname":"小米HDMI转VGA线",
+		"goodsprice":"79",		
+		"goodsdel":"",
+		"goodspic":
+			{
+				"pic0":"listImg/p11.jpg"
+					
+			}		
+	},
+	{
+		"goodsbig":"listImg/p12.jpg",
+		"goodsdsc":"适用于 小米盒子标准版",			
+		"goodsname":"小米千兆网线 3米",
+		"goodsprice":"19.9",
+		"goodsdel":"",		
+		"goodspic":
+			{
+				"pic0":"listImg/p12.jpg"
+				
+			}		
+	},
+	{
+		"goodsbig":"listImg/p13.jpg",
+		"goodsdsc":"适用于 小米手机2A",			
+		"goodsname":"红米2/2A/小米手机2A电池座充",
+		"goodsprice":"49",		
+		"goodsdel":"",
+		"goodspic":
+			{
+				"pic0":"listImg/p13.jpg"
+			
+			}		
+	},
+	{
+		"goodsbig":"listImg/p14.jpg",
+		"goodsdsc":"",				
+		"goodsname":"SanDisk 32GB高速存储卡（TF Class10）",
+		"goodsprice":"69.9",	
+		"goodsdel":"",	
+		"goodspic":
+			{
+				"pic0":"listImg/p14.jpg"
+				
+			}		
+	},
+	{
+		"goodsbig":"listImg/p15.jpg",	
+		"goodsdsc":"适用于 所有小米手机",			
+		"goodsname":"多彩电源适配器",
+		"goodsprice":"19.9",	
+		"goodsdel":"",	
+		"goodspic":
+			{
+				"pic0":"listImg/p15.jpg",
+				"pic1":"listImg/p16.jpg"
+				
+				
+			}		
+	},
+	{
+		"goodsbig":"listImg/p16.jpg",	
+		"goodsdsc":"USB外接百兆网卡",			
+		"goodsname":"SanDisk 8GB存储卡（Class4）",
+		"goodsprice":"39",	
+		"goodsdel":"",	
+		"goodspic":
+			{
+				"pic0":"listImg/p16.jpg"
+							
+			}		
+	},
+	{
+		"goodsbig":"listImg/p17.jpg",
+		"goodsdsc":"",					
+		"goodsname":"SanDisk 8GB存储卡（Class4）",
+		"goodsprice":"23.9",	
+		"goodsdel":"",	
+		"goodspic":
+			{
+				"pic0":"listImg/p17.jpg"
+						
+			}		
+	},
+	{
+		"goodsbig":"listImg/p18.jpg",	
+		"goodsdsc":"",				
+		"goodsname":"ZMI无限拓展数据线 120cm",
+		"goodsprice":"29",		
+		"goodsdel":"",
+		"goodspic":
+			{
+				"pic0":"listImg/p18.jpg"
+								
+			}		
+	},
+	{
+		"goodsbig":"listImg/p19.jpg",		
+		"goodsdsc":"适用于 小米盒子标准版",				
+		"goodsname":"1.5m HDMI高清数据线",
+		"goodsprice":"39",	
+		"goodsdel":"",	
+		"goodspic":
+			{
+				"pic0":"listImg/p19.jpg"
+								
+			}		
+	},
+	{
+		"goodsbig":"listImg/p20.jpg",		
+		"goodsdsc":"适用于 小米手机4c",				
+		"goodsname":"USB Type-C 转接头",
+		"goodsprice":"5",
+		"goodsdel":"",		
+		"goodspic":
+			{
+				"pic0":"listImg/p20.jpg"
+							
+			}		
+	},
+	{
+		"goodsbig":"listImg/p21.jpg",
+		"goodsdsc":"",					
+		"goodsname":"SanDisk 16GB高速存储卡（TF Class10）",
+		"goodsprice":"33.9",	
+		"goodsdel":"",	
+		"goodspic":
+			{
+				"pic0":"listImg/p21.jpg"
+							
+			}		
+	},
+	{
+		"goodsbig":"listImg/p22.jpg",	
+		"goodsdsc":"",					
+		"goodsname":"ZMI移动电源10000mAh",
+		"goodsprice":"99",		
+		"goodsdel":"",
+		"goodspic":
+			{
+				"pic0":"listImg/p22.jpg",
+				"pic1":"listImg/p23.jpg",
+				"pic2":"listImg/p24.jpg"			
+			}		
+	},
+	{
+		"goodsbig":"listImg/p23.jpg",	
+		"goodsdsc":"",					
+		"goodsname":"小米移动电源5000mAh",
+		"goodsprice":"49",	
+		"goodsdel":"",	
+		"goodspic":
+			{			
+				"pic0":"listImg/p23.jpg",
+				"pic1":"listImg/p24.jpg"			
+				
+			}		
+	},
+	{
+		"goodsbig":"listImg/p24.jpg",	
+		"goodsdsc":"",					
+		"goodsname":"ZMI随身路由器",
+		"goodsprice":"299",		
+		"goodsdel":"",
+		"goodspic":
+			{			
+				"pic0":"listImg/p24.jpg",
+				"pic1":"listImg/p25.jpg"			
+						
+			}		
+	},
+	{
+		"goodsbig":"listImg/p25.jpg",	
+		"goodsdsc":"",					
+		"goodsname":"ZMI随身路由器（全网通版）",
+		"goodsprice":"349",	
+		"goodsdel":"",	
+		"goodspic":
+			{			
+				"pic0":"listImg/p25.jpg"
+									
+			}		
+	},
+	{
+		"goodsbig":"listImg/p26.jpg",	
+		"goodsdsc":"",					
+		"goodsname":"ZMI智能移动电源 10000mAh",
+		"goodsprice":"129",		
+		"goodsdel":"",
+		"goodspic":
+			{			
+				"pic0":"listImg/p26.jpg",	
+				"pic1":"listImg/p27.jpg"		
+											
+			}		
+	},
+	{
+		"goodsbig":"listImg/p27.jpg",	
+		"goodsdsc":"",					
+		"goodsname":"小米移动电源10000mAh 高配版",
+		"goodsprice":"149",		
+		"goodsdel":"139",
+		"goodspic":
+			{			
+				"pic0":"listImg/p27.jpg"
+													
+			}		
+	},
+	{
+		"goodsbig":"listImg/p28.jpg",
+		"goodsdsc":"适用于 小米盒子增强版",							
+		"goodsname":"小米盒子增强版AV线",
+		"goodsprice":"149",		
+		"goodsdel":"",
+		"goodspic":
+			{			
+				"pic0":"listImg/p28.jpg"
+													
+			}		
+	},
+	{
+		"goodsbig":"listImg/p29.jpg",
+		"goodsdsc":"",							
+		"goodsname":"SanDisk 16GB存储卡（Class4）",
+		"goodsprice":"31.9",	
+		"goodsdel":"29",	
+		"goodspic":
+			{			
+				"pic0":"listImg/p29.jpg"
+													
+			}		
+	},
+	{
+		"goodsbig":"listImg/p30.jpg",
+		"goodsdsc":"",							
+		"goodsname":"小米移动电源20000mAh",
+		"goodsprice":"149",		
+		"goodsdel":"",
+		"goodspic":
+			{			
+				"pic0":"listImg/p30.jpg"
+												
+			}		
+	},
+	{
+		"goodsbig":"listImg/p31.jpg",	
+		"goodsdsc":"适用于 小米手机1",							
+		"goodsname":"米兔手机U盘升级版",
+		"goodsprice":"149",	
+		"goodsdel":"",	
+		"goodspic":
+			{			
+				"pic0":"listImg/p31.jpg"
+												
+			}		
+	},
+	{
+		"goodsbig":"listImg/p32.jpg",
+		"goodsdsc":"",							
+		"goodsname":"小米插线板 5孔位",
+		"goodsprice":"39",		
+		"goodsdel":"29",
+		"goodspic":
+			{			
+				"pic0":"listImg/p32.jpg"
+													
+			}		
+	},
+	{
+		"goodsbig":"listImg/p33.jpg",	
+		"goodsdsc":"",						
+		"goodsname":"小米插线板",
+		"goodsprice":"49",		
+		"goodsdel":"",
+		"goodspic":
+			{			
+				"pic0":"listImg/p33.jpg",	
+				"pic1":"listImg/p34.jpg"			
+										
+			}		
+	},
+	{
+		"goodsbig":"listImg/p34.jpg",	
+		"goodsdsc":"",						
+		"goodsname":"小米智能插线板",
+		"goodsprice":"69",	
+		"goodsdel":"",	
+		"goodspic":
+			{			
+				"pic0":"listImg/p34.jpg"
+													
+			}		
+	},
+	{
+		"goodsbig":"listImg/p35.jpg",	
+		"goodsdsc":"",						
+		"goodsname":"彩虹5号电池（10粒装）",
+		"goodsprice":"9.9",		
+		"goodsdel":"",
+		"goodspic":
+			{			
+				"pic0":"listImg/p35.jpg"
+													
+			}		
+	}
+]

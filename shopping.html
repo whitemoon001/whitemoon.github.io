@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/shopping.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="css/icon/index.css">
+		<script src="js/jq.js"></script>
+		<script src="js/shopping.js"></script>
+		<script src="js/demo.js"></script>
+	</head>
+	<body>
+		<!-------------------------------头部部分--------------------------------->
+		<div class="header-box">
+			<div class="header">
+				<div class="left">
+					<a href="index.html"><img src="images/milogo.jpg"/></a>
+					<h3><a href="javascript:;">我的购物车</a></h3>
+					<span>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</span>
+				</div>
+				<div class="right">
+					<a href="javascript:;">登录</a>
+					<span>|</span>
+					<a href="javascript:;">注册</a>
+				</div>
+			</div>
+		</div>
+		<div class="info-box">				
+			<div class="info">
+				<p>
+					<a href="javascript:;"><input type="checkbox"  id="check1"/></a>				
+					<span class="tab1">全选</span>
+					<span class="tab2">商品名称</span>
+					<span class="tab3">单价</span>
+					<span class="tab4">数量</span>
+					<span class="tab5">小计</span>
+					<span class="tab6">操作</span>
+				</p>
+				<div class="shop">
+					<ul class="goods">
+						<li class="ice1"><a href="javascript:;"><input type="checkbox"  id="check2"/></a></li>
+						<li class="ice2"><a href="javascript:;"><img src="images/computer.jpg"/></a></li>
+						<li class="ice3"><a href="javascript:;">小米笔记本Air 12.5英寸 银色</a></li>
+						<li class="ice4"><span>3499元</span></li>
+						<li class="ice5">
+							<a href="javascript:;">
+								<input type="button"  id="btn1" value="-"/>
+								<input type="text"  id="txt" value="1"/>
+								<input type="button"  id="btn2" value="+"/>							
+							</a>
+						</li>
+						<li class="ice6"><span>6998元</span></li>
+						<li class="ice7"><a href="javascript:;">×</a></li>
+					</ul>					
+				</div>
+				
+			</div>				
+		</div>			
+		
+		<!-------------------------------------大家购买------------------------------------------>
+		<div class="we-box">
+			<div class="we">
+				<img src="images/beij.jpg" class="bj1"/>
+				<h2>买购物车中商品的人还买了</h2>
+				<img src="images/beij.jpg" class="bj2"/>				
+			</div>
+			<div class="tu-box">
+	    		<ul>	    		
+		    		<li class="tu1">
+			    		<dl>
+			            	<dt><a href="javascript:;"><img src="images/you1.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小钢炮蓝牙音箱 青春版</a><em>99元</em><span>2473人好评</span></dd>
+			            </dl>
+			            <dl>
+			            	<dt><a href="javascript:;"><img src="images/you2.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小米蓝牙音箱</a><em>199元</em><span>2.1万人好评</span></dd>
+			            </dl>
+			            <dl>
+			            	<dt><a href="javascript:;"><img src="images/you3.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小米低音炮</a><em>599元</em><span>5187人好评</span></dd>
+			            </dl>
+			            <dl>
+			            	<dt><a href="javascript:;"><img src="images/you4.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小米电视主机</a><em>999元</em><span>230人好评</span></dd>
+			            </dl>
+			            <dl class="pir">
+			            	<dt><a href="javascript:;"><img src="images/you5.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小米家庭音响 金属版</a><em>899元</em><span>0人好评</span></dd>
+			            </dl>  
+			    	</li>	
+			   	    		
+		    		<li>
+			    		<dl>
+			            	<dt><a href="javascript:;"><img src="images/you6.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小米米兔音箱</a><em>99元</em><span>512人好评</span></dd>
+			            </dl>
+			            <dl>
+			            	<dt><a href="javascript:;"><img src="images/you7.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小米网络收音机</a><em>129元</em><span>2965人好评</span></dd>
+			            </dl>
+			            <dl>
+			            	<dt><a href="javascript:;"><img src="images/you8.jpg"/></a></dt>
+			                <dd><a href="javascript:;">USB-C至HDMI多工能转接器</a><em>149元</em><span>425人好评</span></dd>
+			            </dl>
+			            <dl>
+			            	<dt><a href="javascript:;"><img src="images/you9.jpg"/></a></dt>
+			                <dd><a href="javascript:;">米家骑记电助力折叠自行车</a><em>2999元</em><span>483人好评</span></dd>
+			            </dl>
+			            <dl class="pir">
+			            	<dt><a href="javascript:;"><img src="images/you10.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人好评</span></dd>
+			            </dl>  
+		    		</li>
+			    </ul>
+			</div>
+		</div>
+		<!--------------------------------------------浏览记录------------------------------------------------>
+		<div class="record-box">
+			<div class="record">
+				<img src="images/beij.jpg" class="bj1"/>
+				<h2>您还看了</h2>
+				<img src="images/beij.jpg" class="bj2"/>				
+			</div>
+			<div class="pic">
+				<ul>
+					<li>
+			    		<dl>
+			            	<dt><a href="javascript:;"><img src="images/you1.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小钢炮蓝牙音箱 青春版</a><em>99元</em></dd>
+			            </dl>
+			            <dl>
+			            	<dt><a href="javascript:;"><img src="images/you2.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小钢炮蓝牙音箱 青春版</a><em>99元</em></dd>
+			            </dl>
+			            <dl>
+			            	<dt><a href="javascript:;"><img src="images/you3.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小钢炮蓝牙音箱 青春版</a><em>99元</em></dd>
+			            </dl>
+			             <dl>
+			            	<dt><a href="javascript:;"><img src="images/you4.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小钢炮蓝牙音箱 青春版</a><em>99元</em></dd>
+			            </dl>
+			            <dl class="pir">
+			            	<dt><a href="javascript:;"><img src="images/you5.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小米家庭音响 金属版</a><em>899元</em></dd>
+			            </dl>  
+			    	</li>	
+			    	<li>
+			    		<dl>
+			            	<dt><a href="javascript:;"><img src="images/you6.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小米米兔音箱</a><em>99元</em><span>512人好评</span></dd>
+			            </dl>
+			            <dl>
+			            	<dt><a href="javascript:;"><img src="images/you7.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小米网络收音机</a><em>129元</em><span>2965人好评</span></dd>
+			            </dl>
+			            <dl>
+			            	<dt><a href="javascript:;"><img src="images/you8.jpg"/></a></dt>
+			                <dd><a href="javascript:;">USB-C至HDMI多工能转接器</a><em>149元</em><span>425人好评</span></dd>
+			            </dl>
+			            <!--<dl>
+			            	<dt><a href="javascript:;"><img src="images/you9.jpg"/></a></dt>
+			                <dd><a href="javascript:;">米家骑记电助力折叠自行车</a><em>2999元</em><span>483人好评</span></dd>
+			            </dl>
+			            <dl class="pir">
+			            	<dt><a href="javascript:;"><img src="images/you10.jpg"/></a></dt>
+			                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人好评</span></dd>
+			            </dl>  -->
+		    		</li>
+				</ul>				
+			</div>
+			<div class="number-box">
+				<ol class="number">
+					<li class="active"><a href="javascript:;"></a></li>
+					<li class="action"><a href="javascript:;"></a></li>
+				</ol>
+			</div>			
+		</div>
+		<!--------------------------------------底部------------------------------------------------------>
+		<div class="size-foot" id="foot">
+			<div class="foot">
+				<div class="foot-service" >
+					<ul class="list-service clearfix">
+						<li><a href="javascript:;"><i class="iconfont">&#xe61d</i>1小时快修服务</a></li>
+						<li><a href="javascript:;"><i class="iconfont">&#xe622</i>7天无理由退货</a></li>
+						<li><a href="javascript:;"><i class="iconfont">&#xe642</i>15天免费换货</a></li>
+						<li><a href="javascript:;"><i class="iconfont">&#xe622</i>满150元包邮</a></li>
+						<li><a href="javascript:;"><i class="iconfont">&#xe654</i>520余家售后网点</a></li>
+					</ul>					
+				</div>
+				<div class="footer-links clearfix">
+					<ul class="col-links col-links-first">
+						<li class="col-li">帮助中心</li>
+						<li><a class="col-a">售后政策</a></li>
+						<li><a class="col-a">自助服务</a></li>
+						<li><a class="col-a">相关下载</a></li>
+					</ul>
+					<ul class="col-links ">
+						<li class="col-li">服务支持</li>
+						<li><a class="col-a">账户管理</a></li>
+						<li><a class="col-a">购物指南</a></li>
+						<li><a class="col-a">订单操作</a></li>
+					</ul>
+					<ul class="col-links ">
+						<li class="col-li">线下门店</li>
+						<li><a class="col-a">账户管理</a></li>
+						<li><a class="col-a">服务网点</a></li>
+						<li><a class="col-a">零售网点</a></li>
+					</ul>
+					
+					<ul class="col-links">
+						<li class="col-li">关注我们</li>
+						<li><a class="col-a">新浪微博</a></li>
+						<li><a class="col-a">小米部落</a></li>
+						<li><a class="col-a">官方微信</a></li>
+					</ul>
+					<ul class="col-links ">
+						<li class="col-li">关于小米</li>
+						<li><a class="col-a">了解小米</a></li>
+						<li><a class="col-a">加入小米</a></li>
+						<li><a class="col-a">联系我们</a></li>
+					</ul>
+					<ul class="col-links ">
+						<li class="col-li">特色服务</li>
+						<li><a class="col-a">F 码通道</a></li>
+						<li><a class="col-a">小米移动</a></li>
+						<li><a class="col-a">防伪查询</a></li>
+					</ul>
+					
+					<ul class="col-context ">
+						<p class="phone">400-100-5678</p>
+						<p>
+							<span>周一至周日 8:00-18:00</span>
+							<br/>（仅收市话费）
+						</p>
+						<a href="javascript:;" class="btn btn-line-primary btn-small">
+							<i class="iconfont">&#xe60a;</i> 24小时在线客服
+						</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--尾部下-->
+		<div class="site-info clearfix" id="footer">
+			<div class="foot clearfix">
+				<div class="logo ir"><img src="images/logo-footer.png"/></div>
+				<div class="info-text">
+					<p class="sites">
+						<a>小米商城</a><span class="sep">|</span>
+						<a>MIUI</a><span class="sep">|</span>
+						<a>米聊</a><span class="sep">|</span>
+						<a>多看书城</a><span class="sep">|</span>
+						<a>小米路由器</a><span class="sep">|</span>
+						<a>视频电话</a><span class="sep">|</span>
+						<a>小米后院</a><span class="sep">|</span>
+						<a>小米天猫店</a><span class="sep">|</span>
+						<a>小米淘宝直营店</a><span class="sep">|</span>
+						<a>小米网盟</a><span class="sep">|</span>
+						<a>问题反馈</a><span class="sep">|</span>
+						<a>Select Region</a>
+					</p>
+					<p>
+						<a href="javascript:;">@mi.com</a>
+						京ICP证110507号 京ICP备10046444号 
+						<a href="javascript:;">京公网安备11010802020134号 </a>
+						<a href="javascript:;">京网文[2014]0059-0009号</a><br/>
+						 违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+					</p>
+				</div>
+				<div class="info-links">
+					<a href="javascript:;"><img src="images/v-logo-0.png"></a>
+					<a href="javascript:;"><img src="images/v-logo-2.png"></a>
+					<a href="javascript:;"><img src="images/v-logo-1.png"></a>
+					<a href="javascript:;"><img src="images/v-logo-3.png"></a>
+				</div>				
+			</div>
+			<div class="slogan"></div>
+		</div>	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,2523 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的项目</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="css/icon/index.css">
+		<script src="js/jq.js"></script>
+		<script src="js/move.js"></script>
+		<script src="js/base.js"></script>
+		<script src="js/demo.js"></script>
+	</head>
+	<body>
+		<!--------------------------------------------头部部分------------------------------------------------>
+		<div class="floor">
+		    <ul>		        
+		        <li>1F <span>单品</span></li>
+		        <li>2F <span>硬件</span></li>
+		        <li>3F <span>搭配</span></li>
+		        <li>4F <span>配件</span></li>
+		        <li>5F <span>周边</span></li>
+		        <li>6F <span>推荐</span></li>
+		        <li>7F <span>热评</span></li>
+		        <li>8F <span>内容</span></li>
+		        <li>9F <span>视频</span></li>
+		        <li class="last">10F<span>TOP</span></li>		       
+		    </ul>
+		</div>
+		<div class="header-box">
+			<!--头部背景图-->
+			<div class="header-bg"></div>
+			<div class="header-con">
+				<div class="header-nav">
+					<!--头部导航左部分-->
+					<div class="header-nav-left">
+						<ul class="MIUI">
+							<li><a href="javascript:;">小米商城</a></li>
+							<li><a href="javascript:;">MIUI</a></li>
+							<li><a href="javascript:;">米聊</a></li>
+							<li><a href="javascript:;">游戏</a></li>
+							<li><a href="javascript:;">多看阅读</a></li>
+							<li><a href="javascript:;">云服务</a></li>
+							<li><a href="javascript:;">金融</a></li>
+							<li><a href="javascript:;">小米网移动版</a></li>
+							<li><a href="javascript:;">问题反馈</a></li>
+							<li><a href="javascript:;" class="noline">Select Region</a></li>
+						</ul>						
+					</div>
+					<!--头部导航右部分-->
+					<div class="header-nav-right">
+						<div class="shop-car"><a href="shopping.html">购物车( 0 )</a>
+							<div class="mask" style="display:none;">购物车中还没有商品，赶紧选购吧！</div>
+						</div>
+						<ul class="shop">
+							<li><a href="login.html">登录</a></li>
+							<li><a href="register.html">注册</a></li>
+							<li><a href="javascript:;" class="noline">消息通知</a></li>							
+						</ul>						
+					</div>					
+				</div>				
+			</div>
+		</div>
+		<!--------------------------------------------导航部分------------------------------------------------>
+		<div class="nav-box">			
+			<div class="nav-con">
+				<!--导航左部分-->
+				<div class="logo"><a href="javascript:;"></a></div>
+				<div class="pic">
+					<span><a href="javascript:;"></a></span>
+					<dl>
+						<dt><a href="javascript:;">吸走雾霾</a></dt>
+						<dd><a href="javascript:;">北京市</a></dd>
+						<dd><a href="javascript:;">PM2.5:197</a></dd>
+					</dl>
+				</div>		
+				<!--导航中间部分-->
+				<div class="list">
+					<ul class="MI">
+						<li><a href="javascript:;">小米手机</a></li>
+						<li><a href="javascript:;">红米</a></li>
+						<li><a href="javascript:;">平板·笔记本</a></li>
+						<li><a href="javascript:;">电视</a></li>
+						<li><a href="javascript:;">盒子·影音</a></li>
+						<li><a href="javascript:;">路由器</a></li>
+						<li><a href="javascript:;">智能硬件</a></li>
+						<li><a href="javascript:;">服务</a></li>
+						<li><a href="javascript:;">社区</a></li>					
+					</ul>
+				</div>			
+				<!--导航搜索框部分-->
+				<div class="box">
+					<form method="post" class="box-form">
+						<input type="text" class="form-big" id="searchbtn" style="outline: none;"/>
+						<span class="form-small fa fa-search"></span>
+						<div class="text">
+							<a href="javascript:;" class="txt1">小米MIX</a>
+							<a href="javascript:;" class="txt2">人工智能电视</a>
+						</div>
+						<div class="orange" style="display: none;">
+							<p><i>小米手机5</i><span>约有11件</span></p>
+							<p><i>空气净化器2</i><span>约有1件</span></p>
+							<p><i>活塞耳机</i><span>约有4件</span></p>
+							<p><i>小米路由器</i><span>约有8件</span></p>
+							<p><i>移动电源</i><span>约有21件</span></p>
+							<p><i>运动相机</i><span>约有3件</span></p>
+							<p><i>小蚁摄像机</i><span>约有2件</span></p>
+							<p><i>小米体重秤</i><span>约有1件</span></p>
+							<p><i>小米插线板</i><span>约有13件</span></p>
+							<p><i>配件优惠套装</i><span>约有32件</span></p>
+						</div>
+					</form>						
+				</div>
+			</div>
+			<!--弹出层-->
+			<div class="slide-box">
+				<div class="slide-box2">
+					<!--第一块slide-->
+					<div class="slide" style="display:none;">
+						<dl>
+							<dt><a href="javascript:;"><img src="images/note2_320!160x110.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米Note 2</a><span>2799元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/mix220!160x110.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米MIX</a><span>3499元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/5s-110!160x110.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米5s</a><span>1999元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/5splus-220!160x110.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米5s Plus</a><span>2299元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/mi5!160x110.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米手机5</a><span>1599元起</span></dd>
+						</dl>
+						<dl class="nobj">
+							<dt><a href="javascript:;"><img src="images/maxdingbu!160x110.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米MAX</a><span>1299元起</span></dd>
+						</dl>
+					</div>		
+					<!--第二块slide-->
+					<div class="slide" style="display: none;">
+						<dl>
+							<dt><a href="javascript:;"><img src="images/phone1.jpg"/></a></dt>
+							<dd><a href="javascript:;">红米4</a><span>699元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/phone2.jpg"/></a></dt>
+							<dd><a href="javascript:;">红米4A</a><span>499元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/phone3.jpg"/></a></dt>
+							<dd><a href="javascript:;">红米Pro</a><span>1099元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/phone4.jpg"/></a></dt>
+							<dd><a href="javascript:;">红米Note 4</a><span>899元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/phone5.jpg"/></a></dt>
+							<dd><a href="javascript:;">红米Note 3</a><span>799元起</span></dd>
+						</dl>
+						<dl class="nobj">
+							<dt><a href="javascript:;"><img src="images/phone6.jpg"/></a></dt>
+							<dd><a href="javascript:;">红米手机3S</a><span>699元起</span></dd>
+						</dl>
+					</div>
+					<!--第三块slide-->
+					<div class="slide" style="display:none;">
+						<dl>
+							<dt><a href="javascript:;"><img src="images/ban1.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米平板2 16GB</a><span>999元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/ban2.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米平板2 64GB</a><span>1299元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/ban3.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米平板2 64GB Windows</a><span>1299元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/ban4.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米笔记本Air 12.5''</a><span>3499元起</span></dd>
+						</dl>
+						<dl  class="nobj">
+							<dt><a href="javascript:;"><img src="images/ban5.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米笔记本Air 13.3''</a><span>4999元起</span></dd>
+						</dl>						
+					</div>
+					<!--第四块slide-->
+					<div class="slide" style="display: none;">
+						<dl>
+							<dt><a href="javascript:;"><img src="images/tv1.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米电视3s 43英寸</a><span>1799元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/tv2.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米电视3s 48英寸</a><span>1999元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/tv3.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米电视3s 55英寸</a><span>3499元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/tv4.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米电视3s 60英寸</a><span>4499元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/tv5.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米电视3s 65英寸</a><span>4999元起</span></dd>
+						</dl>
+						<dl class="nobj">
+							<dt><a href="javascript:;"><img src="images/tv6.jpg"/></a></dt>
+							<dd><a href="javascript:;">查看全部</a><span class="co">小米电视</span></dd>
+						</dl>
+					</div>
+					<!--第五块slide-->
+					<div class="slide" style="display: none;">
+						<dl>
+							<dt><a href="javascript:;"><img src="images/box1.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米盒子mini版</a><span>179元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/box2.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米盒子3</a><span>249元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/box3.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米盒子3 增强版</a><span>399元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/box4.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米电视主机</a><span>999元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/box5.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米家庭音响 金属版</a><span>899元起</span></dd>
+						</dl>
+						<dl class="nobj">
+							<dt><a href="javascript:;"><img src="images/box6.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米家庭音响 标准版</a><span>699</span></dd>
+						</dl>
+					</div>
+					<!--第六块slide-->
+					<div class="slide" style="display: none;">
+						<dl>
+							<dt><a href="javascript:;"><img src="images/luyou1.jpg"/></a></dt>
+							<dd><a href="javascript:;">全新小米路由器</a><span>699元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/luyou2.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米路由器3 1200M</a><span>149元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/luyou3.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米路由器 mini</a><span>129元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/luyou4.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米路由器3c 300M</a><span>99元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/luyou5.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米路由器 青春版</a><span>79元起</span></dd>
+						</dl>
+						<dl class="nobj">
+							<dt><a href="javascript:;"><img src="images/luyou6.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米WiFi放大器</a><span>39</span></dd>
+						</dl>
+					</div>
+					<!--第七块slide-->
+					<div class="slide" style="display:none;">
+						<dl>
+							<dt><a href="javascript:;"><img src="images/yingjian1.jpg"/></a></dt>
+							<dd><a href="javascript:;">九号平衡车</a><span>1999元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/yingjian2.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米净水器</a><span>1299元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/yingjian3.jpg"/></a></dt>
+							<dd><a href="javascript:;">米家压力IH电饭煲</a><span>999元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/yingjian4.jpg"/></a></dt>
+							<dd><a href="javascript:;">小米空气净化器 2</a><span>699元起</span></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="images/yingjian5.jpg"/></a></dt>
+							<dd><a href="javascript:;">智能摄像机</a><span>149元起</span></dd>
+						</dl>
+						<dl class="nobj">
+							<dt><a href="javascript:;"><img src="images/yingjian6.jpg"/></a></dt>
+							<dd><a href="javascript:;">查看全部</a><span class="co">智能硬件</span></dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--------------------------------------------Banner部分------------------------------------------------>
+		<div class="main-box">
+			<div class="main">
+				<!-------------------------------------轮播图------------------------------------------------>
+				<div class="picture">
+					<ul>
+						<li><a href="javascript:;"><img src="images/guo1.jpg"/></a></li>
+						<li><a href="javascript:;"><img src="images/lun2.jpg"/></a></li>
+						<li><a href="javascript:;"><img src="images/lun3.jpg"/></a></li>
+						<li><a href="javascript:;"><img src="images/blue.jpg"/></a></li>
+						<li><a href="javascript:;"><img src="images/lun5.jpg"/></a></li>
+					</ul>	
+					<div class="de" style="display:none; z-index: 999;">
+						<a href="javascript:;" class="left"><img src="images/jiantou1.jpg"/></a>
+						<a href="javascript:;" class="right"><img src="images/jiantou2.jpg"/></a>									
+					</div>
+				</div>
+				<div class="number">
+					<ol>
+						<li class="active"><a href="javascript:;"></a></li>
+						<li><a href="javascript:;"></a></li>
+						<li><a href="javascript:;"></a></li>
+						<li><a href="javascript:;"></a></li>
+						<li><a href="javascript:;"></a></li>
+					</ol>					
+				</div>
+				
+				<div class="guide">
+					<ul>
+			        	<li><a href="javascript:;"><em>手机&nbsp;电话卡</em><span>&gt;</span></a></li>
+			            <li><a href="javascript:;"><em>笔记本&nbsp;平板</em><span>&gt;</span></a></li>
+			            <li><a href="javascript:;"><em>电视&nbsp;盒子</em><span>&gt;</span></a></li>
+			            <li><a href="javascript:;"><em>路由器&nbsp;智能硬件</em><span>&gt;</span></a></li>
+			            <li><a href="list.html"><em>移动电源&nbsp;电池&nbsp;插线板</em><span>&gt;</span></a></li>
+			            <li><a href="javascript:;"><em>耳机&nbsp;音箱</em><span>&gt;</span></a></li>			           
+			            <li><a href="javascript:;"><em>保护套&nbsp;贴膜</em><span>&gt;</span></a></li>
+			            <li><a href="javascript:;"><em>线材&nbsp;支架&nbsp;存储卡</em><span>&gt;</span></a></li>
+			            <li><a href="javascript:;"><em>箱包&nbsp;服饰</em><span>&gt;</span></a></li>
+			            <li><a href="javascript:;"><em>米兔&nbsp;生活周边</em><span>&gt;</span></a></li>          
+			        </ul>
+				</div>
+				<!--第一块guide-con-->
+				<div class="guide-con">
+					<ol>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic1.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米Note2</em><span>选购</span></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic2.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>红米4</em><span>选购</span></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic3.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>红米手机3X</em><span>选购</span></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic4.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米MIX</em><span>选购</span></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic5.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>红米4A</em><span>选购</span></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic6.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>合约机</em></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic7.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米5s</em><span>选购</span></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic8.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米Note 4</em><span>选购</span></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic9.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>对比手机</em></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic10.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米5s Plus</em><span>选购</span></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic11.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米Note 3</em><span>选购</span></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic12.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米移动 电话卡</em></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic13.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米手机5</em><span>选购</span></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic14.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>红米手机3S</em><span>选购</span></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic15.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米Max</em><span>选购</span></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic16.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>红米Pro</em><span>选购</span></a></dd>
+							</dl>							
+						</li>
+					</ol>					
+				</div>
+				<!--第二块guide-con-->
+				<div class="guide-con">
+					<ol>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic17.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米笔记本Air</em><span>选购</span></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic18.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米平板2</em><span>选购</span></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic19.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>USB-C转接器</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic20.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米笔记本内胆包</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic21.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米便携鼠标</em></a></dd>
+							</dl>													
+						</li>						
+					</ol>					
+				</div>
+				<!--第三块guide-con-->
+				<div class="guide-con">
+					<ol>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic22.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米电视3s 43英寸</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic23.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米电视3 55英寸</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic24.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米盒子 mini</em></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic25.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米电视3s 48英寸</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic26.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米电视3 60英寸</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic27.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米低音炮</em></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic28.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米电视3s 55英寸</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic29.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米电视3 70英寸</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic30.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>蓝牙手柄</em></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic31.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米电视3s 60英寸</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic32.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米电视主机</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic33.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>家庭音响</em></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic34.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米电视3s 65英寸</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic35.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米盒子3 增强版</em></a></dd>
+							</dl>	
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic36.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>电视盒子配件</em></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic37.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米电视3s 65英寸 曲面</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic38.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>红米盒子3</em></a></dd>
+							</dl>							
+						</li>
+					</ol>					
+				</div>
+				<!--第四块guide-con-->
+				<div class="guide-con">
+					<ol>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic39.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>米家扫地机器人及配件</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic40.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>Amazfit运动手表</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic41.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>米兔积木机器人</em></a></dd>
+							</dl>
+							<dl class="par">
+								<dt><a href="javascript:;"><img src="images/pic42.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>全部智能硬件</em></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic43.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米VR眼镜</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic44.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>米家智能电饭煲</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic45.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>智能灯</em></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic46.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米路由器</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic47.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>摄像机</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic48.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>米兔智能故事机</em></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic49.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>九号平衡车</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic50.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>净化器及滤芯</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic51.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>智能家庭组合</em></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic52.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>电助力折叠自行车</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic53.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>净水器及滤芯</em></a></dd>
+							</dl>	
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic54.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>手环及配件</em></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic55.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>米家恒温电水壶</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic56.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>血压计</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic57.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>体重秤</em></a></dd>
+							</dl>	
+						</li>						
+					</ol>					
+				</div>
+				<!--第五块guide-con-->
+				<div class="guide-con">
+					<ol>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic58.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米移动电源</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic59.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>彩虹5号电池</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic60.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米插线板</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic61.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>彩虹7号电池</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic62.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>品牌移动电源</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic63.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>移动电源附件</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic64.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>电池</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic65.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>充电器</em></a></dd>
+							</dl>							
+						</li>						
+					</ol>					
+				</div>
+				<!--第六块guide-con-->
+				<div class="guide-con">
+					<ol>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic66.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米圈铁耳机</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic67.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米随身蓝牙音箱</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic68.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>网络收音机</em></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic69.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米胶囊耳机</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic70.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小钢炮音箱 2</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic71.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>品牌音箱</em></a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic72.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米蓝牙耳机</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic73.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小钢炮音箱 青春版</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic74.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米运动蓝牙耳机</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic75.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米方盒子音箱</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic76.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>品牌耳机</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic77.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米音乐闹钟</em></a></dd>
+							</dl>								
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic78.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米蓝牙音箱</em></a></dd>
+							</dl>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic79.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>小米米兔音箱</em></a></dd>
+							</dl>							
+						</li>
+					</ol>					
+				</div>
+				<!--第七块guide-con-->
+				<div class="guide-con">
+					<ol>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic80.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>贴膜</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic81.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>保护套/保护壳</em></a></dd>
+							</dl>							
+						</li>						
+					</ol>					
+				</div>
+				<!--第八块guide-con-->
+				<div class="guide-con">
+					<ol>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic82.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>线材</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic83.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>自拍杆</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic84.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>手机支架</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic85.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>存储卡</em></a></dd>
+							</dl>							
+						</li>		
+					</ol>					
+				</div>
+				<!--第九块guide-con-->
+				<div class="guide-con">
+					<ol>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic86.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>箱包</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic87.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>90分旅行箱</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic88.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>服饰</em></a></dd>
+							</dl>							
+						</li>							
+					</ol>					
+				</div>
+				<!--第十块guide-con-->
+				<div class="guide-con">
+					<ol>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic89.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>米兔玩偶</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic90.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>鼠标垫</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic91.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>生活周边</em></a></dd>
+							</dl>							
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic92.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>《小米》会刊</em></a></dd>
+							</dl>							
+						</li>	
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="images/pic93.jpg"/></a></dt>
+								<dd><a href="javascript:;"><em>8H乳胶枕</em></a></dd>
+							</dl>							
+						</li>	
+					</ol>					
+				</div>
+				
+			</div>
+		</div>
+		<!--------------------------------------------开放购买------------------------------------------------>
+		<div class="buy-box">
+			<div class="buy">
+		    	<div class="pict1">  
+		        	<dl>
+		            	<dt><a href="javascript:;"><img src="images/time.jpg"/></a></dt>
+		                <dd><a href="javascript:;">开放购买</a></dd>
+		            </dl>
+		            <dl>
+		            	<dt><a href="javascript:;"><img src="images/liwu.jpg"/></a></dt>
+		                <dd><a href="javascript:;">企业团购</a></dd>
+		            </dl>
+		            <dl>
+		            	<dt><a href="javascript:;"><img src="images/xunhuan.jpg"/></a></dt>
+		                <dd><a href="javascript:;">官翻产品</a></dd>
+		            </dl>
+		            <dl>
+		            	<dt><a href="javascript:;"><img src="images/tubiao5.jpg"/></a></dt>
+		                <dd><a href="javascript:;">F码通道</a></dd>
+		            </dl>
+		            <dl>
+		            	<dt><a href="javascript:;"><img src="images/tubiao6.jpg"/></a></dt>
+		                <dd><a href="javascript:;">话费充值</a></dd>
+		            </dl>
+		            <dl>
+		            	<dt><a href="javascript:;"><img src="images/shaozi.jpg"/></a></dt>
+		                <dd><a href="javascript:;">防伪查询</a></dd>
+		            </dl>      
+		        </div>
+		        <div class="pict2">
+		        	<ul>
+		        		<li><a href="javascript:;"><img src="images/huang.jpg"/></a></li>
+		        		<li><a href="middle.html"><img src="images/hong.jpg"/></a></li>
+		        		<li class="no"><a href="javascript:;"><img src="images/lv.jpg"/></a></li>
+		        	</ul>		        	
+		        </div>		                 
+		    </div>
+		</div>
+		<!--------------------------------------------小米明星单品------------------------------------------------>
+		<div class="louti">
+		<div class="product fr">
+			<div class="product-c">
+		    	<h2>小米明星单品</h2>	
+		    	<div class="more">
+		    		<a href="javascript:;" class="left">&lt;</a>
+		    		<a href="javascript:;" class="right">&gt;</a>
+		    	</div>
+		    	<div class="pro-box">
+		    		<ul>	    		
+			    		<li id="moveu">
+				    		<dl>
+				            	<dt><a href="javascript:;"><img src="images/danpin1.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米5s</a><em>"暗夜之眼"超光感相机</em><span>1999元</span></dd>
+				            </dl>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/danpin2.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米MAX</a><em>11.6-11.8购机赠小米羊毛触屏手套</em><span>1799元</span></dd>
+				            </dl>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/danpin3.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米5s Plus</a><em>5.7英寸大屏双摄手机，拍照黑科技</em><span>2299元起</span></dd>
+				            </dl>
+				            <dl>
+				            	<dt><a href="detail.html"><img src="images/danpin4.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米笔记本</a><em>独立显卡、超轻薄、金属机身</em><span>3499元</span></dd>
+				            </dl>
+				            <dl class="pir">
+				            	<dt><a href="javascript:;"><img src="images/danpin5.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米平板2 16GB现货</a><em>轻薄全金属，海量内容</em><span>999元</span></dd>
+				            </dl>  
+				    	</li>	
+			    	
+				    	<li>
+				    		<dl>
+				            	<dt><a href="javascript:;"><img src="images/danpin6.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米电视3s 43英寸</a><em>高品质原装液晶屏，超薄金属机身</em><span>1799元</span></dd>
+				            </dl>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/danpin7.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米盒子3 增强版</a><em>高端4K 网络机顶盒</em><span>399元</span></dd>
+				            </dl>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/danpin8.jpg"/></a></dt>
+				                <dd><a href="javascript:;">米家LED 智能台灯</a><em>无可
+				                	闪，亮度色温无级调节</em><span>169元起</span></dd>
+				            </dl>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/danpin9.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米手环2</a><em>每天早10点开售</em><span>149元</span></dd>
+				            </dl>
+				            <dl class="pir">
+				            	<dt><a href="javascript:;"><img src="images/danpin10.jpg"/></a></dt>
+				                <dd><a href="javascript:;">米兔定位电话</a><em>时刻定位，守护你所爱</em><span>169元</span></dd>
+				            </dl>  
+			    		</li>
+		    		</ul>
+		    	</div>
+			</div>			
+		</div>
+		<!--------------------------------------------智能硬件------------------------------------------------>		
+		
+		<div class="vr-box  fr">
+			<div class="vr">
+				<h2><em>智能硬件</em><a href="javascript:;">查看全部</a></h2>
+				<div class="left">
+					<img src="images/vr.jpg"/>
+				</div>
+				<div class="right">		
+					<ul>
+						<li>					
+							<dl>
+				            	<dt><a href="javascript:;"><img src="images/vr1.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米路由器3</a><em>11月11日0点-24点，特价119元</em><span>149元</span></dd>
+				            </dl> 
+			            <li>
+			            </li>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/vr2.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米净水器 厨下式</a><em>隐藏安装，大流量直出纯净水</em><span>1999元</span></dd>
+				            </dl> 
+			            </li>
+				        <li>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/vr3.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米空气净化器2</a><em>高效除霾，10分钟换新房间空气</em><span>699元</span></dd>
+				            </dl> 
+			            </li>
+				            <dl class="no">
+				            	<dt><a href="javascript:;"><img src="images/vr4.jpg"/></a></dt>
+				                <dd><a href="javascript:;">米家压力IH电饭煲</a><em>智能控制，压力IH电饭煲</em><span>999元</span></dd>
+				            </dl> 
+				        </li>
+				        <li>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/vr5.jpg"/></a></dt>
+				                <dd><a href="javascript:;">米兔智能故事机</a><em>微信远程互动，智能语音</em><span>199元</span></dd>
+				            </dl> 
+				        </li>
+				        <li>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/vr6.jpg"/></a></dt>
+				                <dd><a href="javascript:;">米家小白智能摄像机</a><em>360°全景拍摄，1080P高清摄像</em><span>399元</span></dd>
+				            </dl> 
+				        </li>
+				        <li>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/vr7.jpg"/></a></dt>
+				                <dd><a href="javascript:;">米家飞利浦智睿台灯二代</a><em>感知环境光，主动优化场景照明</em><span>199元</span></dd>
+				         		</dl>  
+				        </li>
+				        <li>
+				            <dl class="no">
+				            	<dt><a href="javascript:;"><img src="images/vr8.jpg"/></a></dt>
+				                <dd><a href="javascript:;">九号平衡车</a><em>年轻人的酷玩具，骑行遥控两种玩法</em><span>1999元</span></dd>
+				            </dl> 
+			            </li>
+		            </ul>
+				</div>
+			</div>			
+		</div>
+		<!--------------------------------------------搭配------------------------------------------------>		
+		<div class="mi-box fr">
+			<div class="mi">
+				<h2><em>搭配</em>
+					<ul>
+						<li class="active22"><a href="javascript:;">热门</a></li>
+						<li><a href="javascript:;">耳机音箱</a></li>
+						<li><a href="javascript:;">电源</a></li>
+						<li class="no"><a href="javascript:;">电池存储卡</a></li>
+					</ul>
+				</h2>
+				<div class="left">
+					<a href="logo.html" class="co"><img src="images/dianyuan.jpg"/></a>
+					<a href="javascript:;"><img src="images/mimi2.jpg"/></a>
+				</div>
+				
+				<div class="right">
+					<!--热门-->
+					<ul style="display: none;">
+						<li>					
+							<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi1.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+							</dl> 					        
+				     		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi2.jpg"/></a></dt>
+				                <dd><a href="javascript:;">10000mAh小米移动电源2</a><em>79元</em><span>3100人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				     		</dl> 
+				        	<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi3.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米插线板</a><em>49元</em><span>26万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				        	</dl>
+				      		<dl style="margin-right: 0;">
+				            	<dt><a href="javascript:;"><img src="images/mi4.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米小钢炮蓝牙音箱2</a><em>129元</em><span>1.6万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				      		</dl>
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi5.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米蓝牙音箱</a><em>199元</em><span>2.1万人评价</span></dd>
+				            	<div class="hide">	
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl>  
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi6.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米活塞耳机 基础版</a><em>29元</em><span>6.9万人评价</span></dd>
+				          	 	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl> 
+				       		 <dl>
+				            	<dt><a href="javascript:;"><img src="images/mi7.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米音乐闹钟</a><em>199元</em><span>339人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		 </dl>
+				     		<dl class="no">				            	
+				            	<div class="aa">
+				            		<ol>
+				            			<li class="a1"><a href="javascript:;"><img src="images/mi8.jpg"/></a></li>
+				            			<li class="a2"><a href="javascript:;">小钢炮蓝牙音..</a><span>99元</span></li>
+				            		</ol>
+				            	</div>
+				            	
+				            	<div class="bb">
+				            		<ol>
+				            			<li class="b1"><a href="javascript:;"><img src="images/mi9.jpg"/></a></li>
+				            			<li class="b2"><a href="javascript:;">浏览更多</a><span>热门</span></li>
+				            		</ol>
+				           		</div>				            	
+				            </dl>	
+				        </li>
+					</ul>
+				<!--耳机音箱-->
+					<ul style="display: block">
+						<li>					
+							<dl style="position: relative;overflow: hidden;">
+				            	<dt><a href="javascript:;"><img src="images/mi10.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+							</dl> 					        
+				     		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi11.jpg"/></a></dt>
+				                <dd><a href="javascript:;">10000mAh小米移动电源2</a><em>79元</em><span>3100人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				     		</dl> 
+				        	<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi12.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米插线板</a><em>49元</em><span>26万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				        	</dl>
+				      		<dl style="margin-right: 0;">
+				            	<dt><a href="javascript:;"><img src="images/mi13.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米小钢炮蓝牙音箱2</a><em>129元</em><span>1.6万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				      		</dl>
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi14.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米蓝牙音箱</a><em>199元</em><span>2.1万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl>  
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi15.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米活塞耳机 基础版</a><em>29元</em><span>6.9万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl> 
+				       		 <dl>
+				            	<dt><a href="javascript:;"><img src="images/mi16.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米音乐闹钟</a><em>199元</em><span>339人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		 </dl>
+				     		<dl class="no">				            	
+				            	<div class="aa" >
+				            		<ol>
+				            			<li class="a1"><a href="javascript:;"><img src="images/mi17.jpg"/></a></li>
+				            			<li class="a2"><a href="javascript:;">小钢炮蓝牙音..</a><span>99元</span></li>
+				            		</ol>
+				            	</div>				            	
+				            	<div class="bb">
+				            		<ol>
+				            			<li class="b1"><a href="javascript:;"><img src="images/mi9.jpg"/></a></li>
+				            			<li class="b2"><a href="javascript:;">浏览更多</a><span>热门</span></li>
+				            		</ol>
+				           		</div>				            	
+				            </dl>	
+				        </li>
+					</ul>
+				<!--电源-->
+					<ul style="display: none;">
+						<li>					
+							<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi18.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+							</dl> 					        
+				     		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi19.jpg"/></a></dt>
+				                <dd><a href="javascript:;">10000mAh小米移动电源2</a><em>79元</em><span>3100人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				     		</dl> 
+				        	<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi20.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米插线板</a><em>49元</em><span>26万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				        	</dl>
+				      		<dl style="margin-right: 0;">
+				            	<dt><a href="javascript:;"><img src="images/mi21.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米小钢炮蓝牙音箱2</a><em>129元</em><span>1.6万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				      		</dl>
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi22.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米蓝牙音箱</a><em>199元</em><span>2.1万人评价</span></dd>
+				            	<div class="hide">	
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl>  
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi23.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米活塞耳机 基础版</a><em>29元</em><span>6.9万人评价</span></dd>
+				          	 	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl> 
+				       		 <dl>
+				            	<dt><a href="javascript:;"><img src="images/mi24.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米音乐闹钟</a><em>199元</em><span>339人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		 </dl>
+				     		<dl class="no">				            	
+				            	<div class="aa" >
+				            		<ol>
+				            			<li class="a1"><a href="javascript:;"><img src="images/mi25.jpg"/></a></li>
+				            			<li class="a2"><a href="javascript:;">小钢炮蓝牙音..</a><span>99元</span></li>
+				            		</ol>
+				            	</div>
+				            	
+				            	<div class="bb">
+				            		<ol>
+				            			<li class="b1"><a href="javascript:;"><img src="images/mi9.jpg"/></a></li>
+				            			<li class="b2"><a href="javascript:;">浏览更多</a><span>热门</span></li>
+				            		</ol>
+				           		</div>				            	
+				            </dl>	
+				        </li>
+					</ul>
+				<!--电池存储卡-->
+					<ul style="display: none;">
+						<li>					
+							<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi26.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+							</dl> 					        
+				     		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi27.jpg"/></a></dt>
+				                <dd><a href="javascript:;">10000mAh小米移动电源2</a><em>79元</em><span>3100人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				     		</dl> 
+				        	<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi28.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米插线板</a><em>49元</em><span>26万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				        	</dl>
+				      		<dl style="margin-right: 0;">
+				            	<dt><a href="javascript:;"><img src="images/mi29.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米小钢炮蓝牙音箱2</a><em>129元</em><span>1.6万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				      		</dl>
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi30.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米蓝牙音箱</a><em>199元</em><span>2.1万人评价</span></dd>
+				            	<div class="hide">	
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl>  
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi31.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米活塞耳机 基础版</a><em>29元</em><span>6.9万人评价</span></dd>
+				          	 	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl> 
+				       		 <dl>
+				            	<dt><a href="javascript:;"><img src="images/mi32.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米音乐闹钟</a><em>199元</em><span>339人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		 </dl>
+				     		<dl class="no">				            	
+				            	<div class="aa" style="width: 234px;height: 143px;">
+				            		<ol>
+				            			<li class="a1"><a href="javascript:;"><img src="images/mi33.jpg"/></a></li>
+				            			<li class="a2"><a href="javascript:;">小钢炮蓝牙音..</a><span>99元</span></li>
+				            		</ol>
+				            	</div>
+				            	
+				            	<div class="bb">
+				            		<ol>
+				            			<li class="b1"><a href="javascript:;"><img src="images/mi9.jpg"/></a></li>
+				            			<li class="b2"><a href="javascript:;">浏览更多</a><span>热门</span></li>
+				            		</ol>
+				           		</div>				            	
+				            </dl>	
+				        </li>
+					</ul>
+				</div>					
+			</div>			
+		</div>
+		<!--------------------------------------------配件------------------------------------------------>		
+		<div class="mi-box2 fr">
+			<div class="mi">
+				<h2><em>配件</em>
+					<ul>
+						<li class="active22"><a href="javascript:;">热门</a></li>
+						<li><a href="javascript:;">保护套</a></li>
+						<li><a href="javascript:;">贴膜</a></li>
+						<li class="no"><a href="javascript:;">其他配件</a></li>
+					</ul>
+				</h2>
+				<div class="left">
+					<a href="javascript:;" class="co"><img src="images/mimi3.jpg"/></a>
+					<a href="javascript:;"><img src="images/mimi4.jpg"/></a>
+				</div>
+				
+				<div class="right">
+					<!--热门-->
+					<ul style="display: block;">
+						<li>					
+							<dl>
+				            	<dt><a href="javascript:;"><img src="images/h1.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+							</dl> 					        
+				     		<dl>
+				            	<dt><a href="javascript:;"><img src="images/h2.jpg"/></a></dt>
+				                <dd><a href="javascript:;">10000mAh小米移动电源2</a><em>79元</em><span>3100人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				     		</dl> 
+				        	<dl>
+				            	<dt><a href="javascript:;"><img src="images/h3.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米插线板</a><em>49元</em><span>26万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				        	</dl>
+				      		<dl style="margin-right: 0;">
+				            	<dt><a href="javascript:;"><img src="images/h4.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米小钢炮蓝牙音箱2</a><em>129元</em><span>1.6万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				      		</dl>
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/h5.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米蓝牙音箱</a><em>199元</em><span>2.1万人评价</span></dd>
+				            	<div class="hide">	
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl>  
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/h6.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米活塞耳机 基础版</a><em>29元</em><span>6.9万人评价</span></dd>
+				          	 	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl> 
+				       		 <dl>
+				            	<dt><a href="javascript:;"><img src="images/h7.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米音乐闹钟</a><em>199元</em><span>339人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		 </dl>
+				     		<dl class="no">				            	
+				            	<div class="aa" >
+				            		<ol>
+				            			<li class="a1"><a href="javascript:;"><img src="images/h8.jpg"/></a></li>
+				            			<li class="a2"><a href="javascript:;">小钢炮蓝牙音..</a><span>99元</span></li>
+				            		</ol>
+				            	</div>
+				            	
+				            	<div class="bb">
+				            		<ol>
+				            			<li class="b1"><a href="javascript:;"><img src="images/mi9.jpg"/></a></li>
+				            			<li class="b2"><a href="javascript:;">浏览更多</a><span>热门</span></li>
+				            		</ol>
+				           		</div>				            	
+				            </dl>	
+				        </li>
+					</ul>
+				<!--保护套-->
+					<ul style="display: block">
+						<li>					
+							<dl style="position: relative;overflow: hidden;">
+				            	<dt><a href="javascript:;"><img src="images/mi10.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+							</dl> 					        
+				     		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi11.jpg"/></a></dt>
+				                <dd><a href="javascript:;">10000mAh小米移动电源2</a><em>79元</em><span>3100人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				     		</dl> 
+				        	<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi12.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米插线板</a><em>49元</em><span>26万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				        	</dl>
+				      		<dl style="margin-right: 0;">
+				            	<dt><a href="javascript:;"><img src="images/mi13.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米小钢炮蓝牙音箱2</a><em>129元</em><span>1.6万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				      		</dl>
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi14.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米蓝牙音箱</a><em>199元</em><span>2.1万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl>  
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi15.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米活塞耳机 基础版</a><em>29元</em><span>6.9万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl> 
+				       		 <dl>
+				            	<dt><a href="javascript:;"><img src="images/mi16.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米音乐闹钟</a><em>199元</em><span>339人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		 </dl>
+				     		<dl class="no">				            	
+				            	<div class="aa" >
+				            		<ol>
+				            			<li class="a1"><a href="javascript:;"><img src="images/mi17.jpg"/></a></li>
+				            			<li class="a2"><a href="javascript:;">小钢炮蓝牙音..</a><span>99元</span></li>
+				            		</ol>
+				            	</div>				            	
+				            	<div class="bb">
+				            		<ol>
+				            			<li class="b1"><a href="javascript:;"><img src="images/mi9.jpg"/></a></li>
+				            			<li class="b2"><a href="javascript:;">浏览更多</a><span>热门</span></li>
+				            		</ol>
+				           		</div>				            	
+				            </dl>	
+				        </li>
+					</ul>
+				<!--贴膜-->
+					<ul style="display: none;">
+						<li>					
+							<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi18.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+							</dl> 					        
+				     		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi19.jpg"/></a></dt>
+				                <dd><a href="javascript:;">10000mAh小米移动电源2</a><em>79元</em><span>3100人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				     		</dl> 
+				        	<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi20.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米插线板</a><em>49元</em><span>26万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				        	</dl>
+				      		<dl style="margin-right: 0;">
+				            	<dt><a href="javascript:;"><img src="images/mi21.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米小钢炮蓝牙音箱2</a><em>129元</em><span>1.6万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				      		</dl>
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi22.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米蓝牙音箱</a><em>199元</em><span>2.1万人评价</span></dd>
+				            	<div class="hide">	
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl>  
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi23.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米活塞耳机 基础版</a><em>29元</em><span>6.9万人评价</span></dd>
+				          	 	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl> 
+				       		 <dl>
+				            	<dt><a href="javascript:;"><img src="images/mi24.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米音乐闹钟</a><em>199元</em><span>339人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		 </dl>
+				     		<dl class="no">				            	
+				            	<div class="aa" >
+				            		<ol>
+				            			<li class="a1"><a href="javascript:;"><img src="images/mi25.jpg"/></a></li>
+				            			<li class="a2"><a href="javascript:;">小钢炮蓝牙音..</a><span>99元</span></li>
+				            		</ol>
+				            	</div>
+				            	
+				            	<div class="bb">
+				            		<ol>
+				            			<li class="b1"><a href="javascript:;"><img src="images/mi9.jpg"/></a></li>
+				            			<li class="b2"><a href="javascript:;">浏览更多</a><span>热门</span></li>
+				            		</ol>
+				           		</div>				            	
+				            </dl>	
+				        </li>
+					</ul>
+				<!--其他配件-->
+					<ul style="display: none;">
+						<li>					
+							<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi26.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+							</dl> 					        
+				     		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi27.jpg"/></a></dt>
+				                <dd><a href="javascript:;">10000mAh小米移动电源2</a><em>79元</em><span>3100人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				     		</dl> 
+				        	<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi28.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米插线板</a><em>49元</em><span>26万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				        	</dl>
+				      		<dl style="margin-right: 0;">
+				            	<dt><a href="javascript:;"><img src="images/mi29.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米小钢炮蓝牙音箱2</a><em>129元</em><span>1.6万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				      		</dl>
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi30.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米蓝牙音箱</a><em>199元</em><span>2.1万人评价</span></dd>
+				            	<div class="hide">	
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl>  
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi31.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米活塞耳机 基础版</a><em>29元</em><span>6.9万人评价</span></dd>
+				          	 	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl> 
+				       		 <dl>
+				            	<dt><a href="javascript:;"><img src="images/mi32.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米音乐闹钟</a><em>199元</em><span>339人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		 </dl>
+				     		<dl class="no">				            	
+				            	<div class="aa" style="width: 234px;height: 143px;">
+				            		<ol>
+				            			<li class="a1"><a href="javascript:;"><img src="images/mi33.jpg"/></a></li>
+				            			<li class="a2"><a href="javascript:;">小钢炮蓝牙音..</a><span>99元</span></li>
+				            		</ol>
+				            	</div>
+				            	
+				            	<div class="bb">
+				            		<ol>
+				            			<li class="b1"><a href="javascript:;"><img src="images/mi9.jpg"/></a></li>
+				            			<li class="b2"><a href="javascript:;">浏览更多</a><span>热门</span></li>
+				            		</ol>
+				           		</div>				            	
+				            </dl>	
+				        </li>
+					</ul>
+				</div>					
+			</div>			
+		</div>
+		<!--------------------------------------------周边------------------------------------------------>		
+		<div class="mi-box3 fr">
+			<div class="mi">
+				<h2><em>周边</em>
+					<ul>
+						<li class="active22"><a href="javascript:;">热门</a></li>
+						<li><a href="javascript:;">服装</a></li>
+						<li><a href="javascript:;">米兔</a></li>
+						<li class="no"><a href="javascript:;">生活周边</a></li>
+						<li class="no"><a href="javascript:;">箱包</a></li>
+					</ul>
+				</h2>
+				<div class="left">
+					<a href="javascript:;" class="co"><img src="images/mimi5.jpg"/></a>
+					<a href="javascript:;"><img src="images/mimi6.jpg"/></a>
+				</div>
+				
+				<div class="right">
+					<!--热门-->
+					<ul style="display: block;">
+						<li>					
+							<dl>
+				            	<dt><a href="javascript:;"><img src="images/m1.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+							</dl> 					        
+				     		<dl>
+				            	<dt><a href="javascript:;"><img src="images/m2.jpg"/></a></dt>
+				                <dd><a href="javascript:;">10000mAh小米移动电源2</a><em>79元</em><span>3100人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				     		</dl> 
+				        	<dl>
+				            	<dt><a href="javascript:;"><img src="images/m3.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米插线板</a><em>49元</em><span>26万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				        	</dl>
+				      		<dl style="margin-right: 0;">
+				            	<dt><a href="javascript:;"><img src="images/m4.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米小钢炮蓝牙音箱2</a><em>129元</em><span>1.6万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				      		</dl>
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/m5.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米蓝牙音箱</a><em>199元</em><span>2.1万人评价</span></dd>
+				            	<div class="hide">	
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl>  
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/m6.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米活塞耳机 基础版</a><em>29元</em><span>6.9万人评价</span></dd>
+				          	 	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl> 
+				       		 <dl>
+				            	<dt><a href="javascript:;"><img src="images/m7.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米音乐闹钟</a><em>199元</em><span>339人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		 </dl>
+				     		<dl class="no">				            	
+				            	<div class="aa" >
+				            		<ol>
+				            			<li class="a1"><a href="javascript:;"><img src="images/m8.jpg"/></a></li>
+				            			<li class="a2"><a href="javascript:;">小钢炮蓝牙音..</a><span>99元</span></li>
+				            		</ol>
+				            	</div>
+				            	
+				            	<div class="bb">
+				            		<ol>
+				            			<li class="b1"><a href="javascript:;"><img src="images/mi9.jpg"/></a></li>
+				            			<li class="b2"><a href="javascript:;">浏览更多</a><span>热门</span></li>
+				            		</ol>
+				           		</div>				            	
+				            </dl>	
+				        </li>
+					</ul>
+				<!--服装-->
+					<ul style="display: block">
+						<li>					
+							<dl style="position: relative;overflow: hidden;">
+				            	<dt><a href="javascript:;"><img src="images/mi10.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+							</dl> 					        
+				     		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi11.jpg"/></a></dt>
+				                <dd><a href="javascript:;">10000mAh小米移动电源2</a><em>79元</em><span>3100人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				     		</dl> 
+				        	<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi12.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米插线板</a><em>49元</em><span>26万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				        	</dl>
+				      		<dl style="margin-right: 0;">
+				            	<dt><a href="javascript:;"><img src="images/mi13.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米小钢炮蓝牙音箱2</a><em>129元</em><span>1.6万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				      		</dl>
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi14.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米蓝牙音箱</a><em>199元</em><span>2.1万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl>  
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi15.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米活塞耳机 基础版</a><em>29元</em><span>6.9万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl> 
+				       		 <dl>
+				            	<dt><a href="javascript:;"><img src="images/mi16.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米音乐闹钟</a><em>199元</em><span>339人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		 </dl>
+				     		<dl class="no">				            	
+				            	<div class="aa" >
+				            		<ol>
+				            			<li class="a1"><a href="javascript:;"><img src="images/mi17.jpg"/></a></li>
+				            			<li class="a2"><a href="javascript:;">小钢炮蓝牙音..</a><span>99元</span></li>
+				            		</ol>
+				            	</div>				            	
+				            	<div class="bb">
+				            		<ol>
+				            			<li class="b1"><a href="javascript:;"><img src="images/mi9.jpg"/></a></li>
+				            			<li class="b2"><a href="javascript:;">浏览更多</a><span>热门</span></li>
+				            		</ol>
+				           		</div>				            	
+				            </dl>	
+				        </li>
+					</ul>
+				<!--米兔-->
+					<ul style="display: none;">
+						<li>					
+							<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi18.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+							</dl> 					        
+				     		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi19.jpg"/></a></dt>
+				                <dd><a href="javascript:;">10000mAh小米移动电源2</a><em>79元</em><span>3100人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				     		</dl> 
+				        	<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi20.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米插线板</a><em>49元</em><span>26万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				        	</dl>
+				      		<dl style="margin-right: 0;">
+				            	<dt><a href="javascript:;"><img src="images/mi21.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米小钢炮蓝牙音箱2</a><em>129元</em><span>1.6万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				      		</dl>
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi22.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米蓝牙音箱</a><em>199元</em><span>2.1万人评价</span></dd>
+				            	<div class="hide">	
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl>  
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi23.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米活塞耳机 基础版</a><em>29元</em><span>6.9万人评价</span></dd>
+				          	 	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl> 
+				       		 <dl>
+				            	<dt><a href="javascript:;"><img src="images/mi24.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米音乐闹钟</a><em>199元</em><span>339人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		 </dl>
+				     		<dl class="no">				            	
+				            	<div class="aa" >
+				            		<ol>
+				            			<li class="a1"><a href="javascript:;"><img src="images/mi25.jpg"/></a></li>
+				            			<li class="a2"><a href="javascript:;">小钢炮蓝牙音..</a><span>99元</span></li>
+				            		</ol>
+				            	</div>
+				            	
+				            	<div class="bb">
+				            		<ol>
+				            			<li class="b1"><a href="javascript:;"><img src="images/mi9.jpg"/></a></li>
+				            			<li class="b2"><a href="javascript:;">浏览更多</a><span>热门</span></li>
+				            		</ol>
+				           		</div>				            	
+				            </dl>	
+				        </li>
+					</ul>
+				<!--生活周边-->
+					<ul style="display: none;">
+						<li>					
+							<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi26.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+							</dl> 					        
+				     		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi27.jpg"/></a></dt>
+				                <dd><a href="javascript:;">10000mAh小米移动电源2</a><em>79元</em><span>3100人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				     		</dl> 
+				        	<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi28.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米插线板</a><em>49元</em><span>26万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				        	</dl>
+				      		<dl style="margin-right: 0;">
+				            	<dt><a href="javascript:;"><img src="images/mi29.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米小钢炮蓝牙音箱2</a><em>129元</em><span>1.6万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				      		</dl>
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi30.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米蓝牙音箱</a><em>199元</em><span>2.1万人评价</span></dd>
+				            	<div class="hide">	
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl>  
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/mi31.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米活塞耳机 基础版</a><em>29元</em><span>6.9万人评价</span></dd>
+				          	 	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl> 
+				       		 <dl>
+				            	<dt><a href="javascript:;"><img src="images/mi32.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米音乐闹钟</a><em>199元</em><span>339人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		 </dl>
+				     		<dl class="no">				            	
+				            	<div class="aa">
+				            		<ol>
+				            			<li class="a1"><a href="javascript:;"><img src="images/mi33.jpg"/></a></li>
+				            			<li class="a2"><a href="javascript:;">小钢炮蓝牙音..</a><span>99元</span></li>
+				            		</ol>
+				            	</div>
+				            	
+				            	<div class="bb">
+				            		<ol>
+				            			<li class="b1"><a href="javascript:;"><img src="images/mi9.jpg"/></a></li>
+				            			<li class="b2"><a href="javascript:;">浏览更多</a><span>热门</span></li>
+				            		</ol>
+				           		</div>				            	
+				            </dl>	
+				        </li>
+					</ul>
+			<!--箱包-->
+						<ul style="display: block;">
+						<li>					
+							<dl>
+				            	<dt><a href="javascript:;"><img src="images/m1.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+							</dl> 					        
+				     		<dl>
+				            	<dt><a href="javascript:;"><img src="images/m2.jpg"/></a></dt>
+				                <dd><a href="javascript:;">10000mAh小米移动电源2</a><em>79元</em><span>3100人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				     		</dl> 
+				        	<dl>
+				            	<dt><a href="javascript:;"><img src="images/m3.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米插线板</a><em>49元</em><span>26万人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				        	</dl>
+				      		<dl style="margin-right: 0;">
+				            	<dt><a href="javascript:;"><img src="images/m4.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米小钢炮蓝牙音箱2</a><em>129元</em><span>1.6万人评价</span></dd>
+				           		<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				      		</dl>
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/m5.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米蓝牙音箱</a><em>199元</em><span>2.1万人评价</span></dd>
+				            	<div class="hide">	
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl>  
+				       		<dl>
+				            	<dt><a href="javascript:;"><img src="images/m6.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米活塞耳机 基础版</a><em>29元</em><span>6.9万人评价</span></dd>
+				          	 	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		</dl> 
+				       		 <dl>
+				            	<dt><a href="javascript:;"><img src="images/m7.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米音乐闹钟</a><em>199元</em><span>339人评价</span></dd>
+				            	<div class="hide">
+					            	<i>客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...</i>
+					            	<strong>来自于8940394335的评价</strong>
+					            </div> 
+				       		 </dl>
+				     		<dl class="no">				            	
+				            	<div class="aa" >
+				            		<ol>
+				            			<li class="a1"><a href="javascript:;"><img src="images/m8.jpg"/></a></li>
+				            			<li class="a2"><a href="javascript:;">小钢炮蓝牙音..</a><span>99元</span></li>
+				            		</ol>
+				            	</div>
+				            	
+				            	<div class="bb">
+				            		<ol>
+				            			<li class="b1"><a href="javascript:;"><img src="images/mi9.jpg"/></a></li>
+				            			<li class="b2"><a href="javascript:;">浏览更多</a><span>热门</span></li>
+				            		</ol>
+				           		</div>				            	
+				            </dl>	
+				        </li>
+					</ul>
+				</div>					
+			</div>			
+		</div>
+		<!--------------------------------------------为你推荐------------------------------------------------>
+		<div class="for-box fr">
+			<div class="for">
+				<h2>为你推荐</h2>	
+		    	<div class="more">
+		    		<a href="javascript:;" class="left">&lt;</a>
+		    		<a href="javascript:;" class="right">&gt;</a>
+		    	</div>
+		    	<div class="you">
+		    		<ul>	    		
+			    		<li>
+				    		<dl>
+				            	<dt><a href="javascript:;"><img src="images/you1.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小钢炮蓝牙音箱 青春版</a><em>99元</em><span>2473人好评</span></dd>
+				            </dl>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/you2.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米蓝牙音箱</a><em>199元</em><span>2.1万人好评</span></dd>
+				            </dl>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/you3.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米低音炮</a><em>599元</em><span>5187人好评</span></dd>
+				            </dl>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/you4.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米电视主机</a><em>999元</em><span>230人好评</span></dd>
+				            </dl>
+				            <dl class="pir">
+				            	<dt><a href="javascript:;"><img src="images/you5.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米家庭音响 金属版</a><em>899元</em><span>0人好评</span></dd>
+				            </dl>  
+				    	</li>	
+			    
+				    	<li>
+				    		<dl>
+				            	<dt><a href="javascript:;"><img src="images/you6.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米米兔音箱</a><em>99元</em><span>512人好评</span></dd>
+				            </dl>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/you7.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米网络收音机</a><em>129元</em><span>2965人好评</span></dd>
+				            </dl>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/you8.jpg"/></a></dt>
+				                <dd><a href="javascript:;">USB-C至HDMI多工能转接器</a><em>149元</em><span>425人好评</span></dd>
+				            </dl>
+				            <dl>
+				            	<dt><a href="javascript:;"><img src="images/you9.jpg"/></a></dt>
+				                <dd><a href="javascript:;">米家骑记电助力折叠自行车</a><em>2999元</em><span>483人好评</span></dd>
+				            </dl>
+				            <dl class="pir">
+				            	<dt><a href="javascript:;"><img src="images/you10.jpg"/></a></dt>
+				                <dd><a href="javascript:;">小米圈铁耳机</a><em>99元</em><span>2.3万人好评</span></dd>
+				            </dl>  
+			    		</li>
+		    		</ul>
+		    	</div>
+			</div>
+		</div>
+		<!--------------------------------------------热评产品------------------------------------------------>
+		<div class="hot-box fr">
+			<div class="hot">
+				<h2>热评产品</h2>
+				<dl>
+	            	<dt><a href="javascript:;"><img src="images/re1.jpg"/></a></dt>
+	                <dd><a href="javascript:;"><p>非常好用，孩子使用防止沉迷于电话影响学习。做工很好，
+	                	定位基本准确，通话清晰。如果加入时间显示就更完美...</p>
+	                	<i>来自于178576295的评价</i><em>米兔定位电话</em><strong>|</strong><span>169元</span></a></dd>
+	            </dl>
+	            <dl>
+	            	<dt><a href="javascript:;"><img src="images/re2.jpg"/></a></dt>
+	                <dd><a href="javascript:;"><p>包装很让人感动，式样也很可爱，做出的饭全家都爱吃，超爱五星！
+	                	手机控制还是不太熟练，最主要是没有连接...</p>
+	                	<i>来自于HZG的评价</i><em>米家压力IH电饭煲</em><strong>|</strong><span>999元</span></a></dd>
+	            </dl>
+	            <dl>
+	            	<dt><a href="javascript:;"><img src="images/re3.jpg"/></a></dt>
+	                <dd><a href="javascript:;"><p>漂亮，轮子和拉杆都很不错，总的来说非常值得买...</p>
+	                	<i>来自于豆筋子的评价</i><em>90分行李箱20寸</em><strong>|</strong><span>299元</span></a></dd>
+	            </dl>
+	            <dl class="pir">
+	            	<dt><a href="javascript:;"><img src="images/re4.jpg"/></a></dt>
+	                <dd><a href="javascript:;"><p>真的很惊讶，小米净化器净化效果特别好，
+	                 	自来水tds为298，净化以后纯水16，而且摆放在哪里都漂亮...</p>
+	               		<i>来自于花落花开年夏年的评价</i><em>小米净水器</em><strong>|</strong><span>1299元</span></a></dd>
+	            </dl>
+			</div>			
+		</div>
+		<!--------------------------------------------内容------------------------------------------------>
+		<div class="con-box fr">
+			<div class="con">
+				<h2>内容</h2>
+				<div class="book-box">
+			<!--		橘色图书-->
+					<div class="book-o phone">
+						<h4>图书</h4>
+						<div class="book-1" style="width:296px;height:271px;">
+							
+							<ul class="book1">
+								<li>
+									<h3><a href="javascript:;">哈利·波特与被诅咒的孩子</a></h3>
+									<p><a href="javascript:;">"哈利·波特"第八个故事中文版震撼来袭！特别彩排版剧本!</a></p>
+									<dl>
+										<dt><a href="javascript:;">29.37元</a></dt>
+										<dd><a href="javascript:;"><img src="images/book1.jpg"/></a></dd>
+									</dl>
+								</li>								
+					
+								<li>
+									<h3><a href="javascript:;">哈利·波特与被诅咒的孩子</a></h3>
+									<p><a href="javascript:;">"哈利·波特"第八个故事中文版震撼来袭！特别彩排版剧本!</a></p>
+									<dl>
+										<dt><a href="javascript:;">29.37元</a></dt>
+										<dd><a href="javascript:;"><img src="images/book2.png"/></a></dd>
+									</dl>
+								</li>								
+						
+								<li>
+									<h3><a href="javascript:;">哈利·波特与被诅咒的孩子</a></h3>
+									<p><a href="javascript:;">"哈利·波特"第八个故事中文版震撼来袭！特别彩排版剧本!</a></p>
+									<dl>
+										<dt><a href="javascript:;">29.37元</a></dt>
+										<dd><a href="javascript:;"><img src="images/book3.png"/></a></dd>
+									</dl>
+								</li>								
+						
+								<li>
+									<h3><a href="javascript:;">哈利·波特与被诅咒的孩子</a></h3>
+									<p><a href="javascript:;">"哈利·波特"第八个故事中文版震撼来袭！特别彩排版剧本!</a></p>
+									<dl>
+										<dt><a href="javascript:;">29.37元</a></dt>
+										<dd><a href="javascript:;"><img src="images/book4.jpg"/></a></dd>
+									</dl>
+								</li>								
+							</ul>
+							
+							<ol class="num">
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ol>
+							<p class="btn">
+								<a href="javascript:;" class="btn1 fa fa-angle-left"></a>
+								<a href="javascript:;" class="btn2 fa fa-angle-right"></a>
+							</p>
+						
+						
+						
+						</div>	
+						
+					</div>	
+			<!--		绿色主题-->
+					<div class="book-g">
+						<h4>MIUI主题</h4>
+						<div class="book-1">
+							<ul class="book1">
+								<li>
+									<h3><a href="javascript:;">小米Note 2</a></h3>
+									<p><a href="javascript:;">小米Note 2官方定制主题 超多侧边栏功能 等你发现</a></p>
+									<dl>
+										<dt><a href="javascript:;">免费</a></dt>
+										<dd><a href="javascript:;"><img src="images/book5.jpg"/></a></dd>
+									</dl>
+								</li>	
+								
+								<li>
+									<h3><a href="javascript:;">小米Note 2</a></h3>
+									<p><a href="javascript:;">小米Note 2官方定制主题 超多侧边栏功能 等你发现</a></p>
+									<dl>
+										<dt><a href="javascript:;">免费</a></dt>
+										<dd><a href="javascript:;"><img src="images/book6.jpg"/></a></dd>
+									</dl>
+								</li>	
+								
+								<li>
+									<h3><a href="javascript:;">小米Note 2</a></h3>
+									<p><a href="javascript:;">小米Note 2官方定制主题 超多侧边栏功能 等你发现</a></p>
+									<dl>
+										<dt><a href="javascript:;">免费</a></dt>
+										<dd><a href="javascript:;"><img src="images/book7.jpg"/></a></dd>
+									</dl>
+								</li>	
+								
+								<li>
+									<h3><a href="javascript:;">小米Note 2</a></h3>
+									<p><a href="javascript:;">小米Note 2官方定制主题 超多侧边栏功能 等你发现</a></p>
+									<dl>
+										<dt><a href="javascript:;">免费</a></dt>
+										<dd><a href="javascript:;"><img src="images/book8.jpg"/></a></dd>
+									</dl>
+								</li>	
+							</ul>
+							<ol class="num">
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ol>
+							<p class="btn">
+								<a href="javascript:;" class="btn1 fa fa-angle-left"></a>
+								<a href="javascript:;" class="btn2 fa fa-angle-right"></a>
+							</p>
+						</div>						
+					</div>		
+			<!--		红色游戏-->
+					<div class="book-r">
+						<h4>游戏</h4>
+						<div class="book-1">
+							<ul class="book1">
+								<li>
+									<h3><a href="javascript:;">剑侠世界</a></h3>
+									<p><a href="javascript:;">一生不容错过的浪漫武侠</a></p>
+									<dl>
+										<dt><a href="javascript:;">免费</a></dt>
+										<dd><a href="javascript:;"><img src="images/book9.jpg"/></a></dd>
+									</dl>
+								</li>	
+								
+								<li>
+									<h3><a href="javascript:;">剑侠世界</a></h3>
+									<p><a href="javascript:;">一生不容错过的浪漫武侠</a></p>
+									<dl>
+										<dt><a href="javascript:;">免费</a></dt>
+										<dd><a href="javascript:;"><img src="images/book10.png"/></a></dd>
+									</dl>
+								</li>	
+								
+								<li>
+									<h3><a href="javascript:;">剑侠世界</a></h3>
+									<p><a href="javascript:;">一生不容错过的浪漫武侠</a></p>
+									<dl>
+										<dt><a href="javascript:;">免费</a></dt>
+										<dd><a href="javascript:;"><img src="images/book11.jpg"/></a></dd>
+									</dl>
+								</li>	
+								
+								<li>
+									<h3><a href="javascript:;">剑侠世界</a></h3>
+									<p><a href="javascript:;">一生不容错过的浪漫武侠</a></p>
+									<dl>
+										<dt><a href="javascript:;">免费</a></dt>
+										<dd><a href="javascript:;"><img src="images/book12.jpg"/></a></dd>
+									</dl>
+								</li>	
+							</ul>
+							<ol class="num">
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ol>
+							<p class="btn">
+								<a href="javascript:;" class="btn1 fa fa-angle-left"></a>
+								<a href="javascript:;" class="btn2 fa fa-angle-right"></a>
+							</p>
+						</div>						
+					</div>	
+			<!--		蓝色应用-->
+					<div class="book-b">
+						<h4>应用</h4>
+						<div class="book-1">
+							<ul class="book1">
+								<li>
+									<h3><a href="javascript:;">2015年度应用</a></h3>
+									<p><a href="javascript:;">2015年度应用</a></p>
+									<dl>
+										<dt><a href="javascript:;">免费</a></dt>
+										<dd><a href="javascript:;"><img src="images/book13.png"/></a></dd>
+									</dl>
+								</li>		
+								<li>
+									<h3><a href="javascript:;">2015年度应用</a></h3>
+									<p><a href="javascript:;">2015年度应用</a></p>
+									<dl>
+										<dt><a href="javascript:;">免费</a></dt>
+										<dd><a href="javascript:;"><img src="images/book14.png"/></a></dd>
+									</dl>
+								</li>		
+								<li>
+									<h3><a href="javascript:;">2015年度应用</a></h3>
+									<p><a href="javascript:;">2015年度应用</a></p>
+									<dl>
+										<dt><a href="javascript:;">免费</a></dt>
+										<dd><a href="javascript:;"><img src="images/book15.png"/></a></dd>
+									</dl>
+								</li>		
+								<li>
+									<h3><a href="javascript:;">2015年度应用</a></h3>
+									<p><a href="javascript:;">2015年度应用</a></p>
+									<dl>
+										<dt><a href="javascript:;">免费</a></dt>
+										<dd><a href="javascript:;"><img src="images/book16.jpg"/></a></dd>
+									</dl>
+								</li>		
+							</ul>
+							<ol class="num">
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ol>
+							<p class="btn">
+								<a href="javascript:;" class="btn1 fa fa-angle-left"></a>
+								<a href="javascript:;" class="btn2 fa fa-angle-right"></a>
+							</p>
+						</div>						
+					</div>					
+				</div>				
+			</div>			
+		</div>
+		<!--------------------------------------------视频------------------------------------------------>
+		<div class="mv-box fr">
+			<div class="mv">
+				<h2><em>视频</em><a href="javascript:;">查看全部</a></h2>
+				<div class="vcd">
+					<a href="javascript:;"><img src="images/con1.jpg"/></a>
+					<dl>
+						<dt><a href="javascript:;">梁朝伟讲述小米Note2的冰山理论</a></dt>
+						<dd>第一眼看到的美，只是全部创作的八分之一</dd>
+					</dl>
+				</div>	
+				<div class="vcd">
+					<a href="javascript:;"><img src="images/con2.jpg"/></a>
+					<dl>
+						<dt><a href="javascript:;">一面科技，一面艺术</a></dt>
+						<dd>梁朝伟讲述双面人生</dd>
+					</dl>
+				</div>	
+				<div class="vcd">
+					<a href="javascript:;"><img src="images/con3.jpg"/></a>
+					<dl>
+						<dt><a href="javascript:;">小米MIX概念手机背后的故事</a></dt>
+						<dd>雷总亲自讲述小米MIX的诞生</dd>
+					</dl>
+				</div>	
+				<div class="vcd">
+					<a href="javascript:;"><img src="images/con4.jpg"/></a>
+					<dl>
+						<dt><a href="javascript:;">菲利普·斯塔克的设计哲学</a></dt>
+						<dd>最负盛名的设计大师，物质越少人性越多</dd>
+					</dl>
+				</div>	
+			</div>
+		</div>
+		</div>
+		<!--------------------------------------底部------------------------------------------------------>
+		<div class="size-foot" id="foot">
+			<div class="foot">
+				<div class="foot-service" >
+					<ul class="list-service clearfix">
+						<li><a href="javascript:;"><i class="iconfont">&#xe61d</i>1小时快修服务</a></li>
+						<li><a href="javascript:;"><i class="iconfont">&#xe622</i>7天无理由退货</a></li>
+						<li><a href="javascript:;"><i class="iconfont">&#xe642</i>15天免费换货</a></li>
+						<li><a href="javascript:;"><i class="iconfont">&#xe622</i>满150元包邮</a></li>
+						<li><a href="javascript:;"><i class="iconfont">&#xe654</i>520余家售后网点</a></li>
+					</ul>					
+				</div>
+				<div class="footer-links clearfix">
+					<ul class="col-links col-links-first">
+						<li class="col-li">帮助中心</li>
+						<li><a class="col-a">售后政策</a></li>
+						<li><a class="col-a">自助服务</a></li>
+						<li><a class="col-a">相关下载</a></li>
+					</ul>
+					<ul class="col-links ">
+						<li class="col-li">服务支持</li>
+						<li><a class="col-a">账户管理</a></li>
+						<li><a class="col-a">购物指南</a></li>
+						<li><a class="col-a">订单操作</a></li>
+					</ul>
+					<ul class="col-links ">
+						<li class="col-li">线下门店</li>
+						<li><a class="col-a">账户管理</a></li>
+						<li><a class="col-a">服务网点</a></li>
+						<li><a class="col-a">零售网点</a></li>
+					</ul>
+					
+					<ul class="col-links">
+						<li class="col-li">关注我们</li>
+						<li><a class="col-a">新浪微博</a></li>
+						<li><a class="col-a">小米部落</a></li>
+						<li><a class="col-a">官方微信</a></li>
+					</ul>
+					<ul class="col-links ">
+						<li class="col-li">关于小米</li>
+						<li><a class="col-a">了解小米</a></li>
+						<li><a class="col-a">加入小米</a></li>
+						<li><a class="col-a">联系我们</a></li>
+					</ul>
+					<ul class="col-links ">
+						<li class="col-li">特色服务</li>
+						<li><a class="col-a">F 码通道</a></li>
+						<li><a class="col-a">小米移动</a></li>
+						<li><a class="col-a">防伪查询</a></li>
+					</ul>
+					
+					<ul class="col-context ">
+						<p class="phone">400-100-5678</p>
+						<p>
+							<span>周一至周日 8:00-18:00</span>
+							<br/>（仅收市话费）
+						</p>
+						<a href="javascript:;" class="btn btn-line-primary btn-small">
+							<i class="iconfont">&#xe60a;</i> 24小时在线客服
+						</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--尾部下-->
+		<div class="site-info clearfix" id="footer">
+			<div class="foot clearfix">
+				<div class="logo ir"><img src="images/logo-footer.png"/></div>
+				<div class="info-text">
+					<p class="sites">
+						<a>小米商城</a><span class="sep">|</span>
+						<a>MIUI</a><span class="sep">|</span>
+						<a>米聊</a><span class="sep">|</span>
+						<a>多看书城</a><span class="sep">|</span>
+						<a>小米路由器</a><span class="sep">|</span>
+						<a>视频电话</a><span class="sep">|</span>
+						<a>小米后院</a><span class="sep">|</span>
+						<a>小米天猫店</a><span class="sep">|</span>
+						<a>小米淘宝直营店</a><span class="sep">|</span>
+						<a>小米网盟</a><span class="sep">|</span>
+						<a>问题反馈</a><span class="sep">|</span>
+						<a>Select Region</a>
+					</p>
+					<p>
+						<a href="javascript:;">@mi.com</a>
+						京ICP证110507号 京ICP备10046444号 
+						<a href="javascript:;">京公网安备11010802020134号 </a>
+						<a href="javascript:;">京网文[2014]0059-0009号</a><br/>
+						 违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+					</p>
+				</div>
+				<div class="info-links">
+					<a href="javascript:;"><img src="images/v-logo-0.png"></a>
+					<a href="javascript:;"><img src="images/v-logo-2.png"></a>
+					<a href="javascript:;"><img src="images/v-logo-1.png"></a>
+					<a href="javascript:;"><img src="images/v-logo-3.png"></a>
+				</div>				
+			</div>
+			<div class="slogan"></div>
+		</div>	
+	</body>
+</html>

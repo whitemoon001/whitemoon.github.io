@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link type="text/css" rel="stylesheet" href="css/register.css"/>
+		<script src="js/jq.js"></script>
+		<script src="js/register.js"></script>
+		<script src="js/demo.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="wrap">				
+				<img src="images/logo.jpg"/>
+				<h1>注册小米账号</h1>
+				<div class="main-box">			
+						<div class="regbox">
+							<div class="phone-step">
+								<div id="select" class="listwrap">
+									<div class="list-tit" id="reg-phone-select-cty">
+										<span class="tits">
+											<span id="select-cycode-result">中国(+86)</span>
+											<i class="icon"></i>
+										</span>										
+									</div>
+									<!--登录方式-->
+									<div class="country-container">
+										<div class="country-code">
+											<div class="usual">
+												<div class="heard">常用</div>
+												<ul class="list clearfix">
+													<li class="record clearfix">
+														<span class="record-country">中国</span>
+														
+														<span class="record-code">+86</span>
+													</li>
+													<li class="record clearfix">
+														<span class="record-country">中国</span>
+														<span class="record-code"></span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="inputbg">
+									<label class="labelbox">
+										<input name="phone" placeholder="请输入手机号码" class="phone"/>
+									</label>
+								</div>
+								<div class="err-tip phones">
+									<div class="dis-box">
+										<em class="icon-error"></em>
+										<span class="con1">请输入手机号码</span>
+									</div>
+								</div>
+								<div class="inputbg password">
+									<label class="labelbox err-labe2">
+										<input name="password"  class="pwd" type="password" placeholder="请设置密码且密码必须是6-12位数字字母" >
+									</label>
+								</div>
+								<div class="err-tip mima">
+									<div class="dis-box">
+										<em class="icon-error"></em>
+										<span class="con2">请输入密码</span>
+									</div>
+								</div>
+								<div class="inputbg inputcode">
+									<label class="labelbox err-label">
+										<input class="code" name="icode" placeholder="图片验证码" type="text">
+									</label>	
+									<!--<img class="icode-img" src="img/code.jpg" alt="图片验证码" title="看不清换一张">-->
+									<!--<span class="icode-span">1234</span>-->
+									<div class="yz"><a href="javascript:;"><img src="images/yz1.jpg" alt="图片验证码" title="nums"></a></div>
+								</div>
+								<div class="err-tip yanzhe">
+									<div class="dis-box">
+										<em class="icon-error"></em>
+										<span class="con3">请输入图片验证码</span>
+									</div>
+								</div>
+								<div class="fixed-bot">
+									<span class="bnt">立即注册</span>
+									<p class="msg">
+										点击“立即注册”，即表示您同意并愿意遵守小米
+										<a href="javascript:;">用户协议</a>和
+										<a href="javascript:;" class="a1">隐私政策</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div class="foot-box">
+				<ul>
+					<li><a href="javascript:;" class="n1">简体</a></li>
+					<li><a href="javascript:;">繁体</a></li>
+					<li><a href="javascript:;">English</a></li>
+					<li><a href="javascript:;" class="n2">常见问题</a></li>
+				</ul>
+				<p>小米公司版权所有—京ICP备10046444-<img src="images/flag.jpg"/>京公网安备11010802020134号—京ICP证110507号</p>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+			var oLi="";
+			for(var i=0;i<data.length;i++){
+				var oImg="";
+				for(var x in data[i].goodspic){//data[i].goodspic为对象，不知道数量，所以用for in
+					oImg+="<img src='"+data[i].goodspic[x]+"'/>"//这个是商品下部分的小图片	
+				} //图片数量不确定，所以循环添加
+			
+				oLi+="<li class='goods clearfix'>"+
+						"<div class='pic'>"+
+							"<a href='javascript:;'><img src='"+data[i].goodspic.pic0+"'></a>"+
+						"</div>"+
+						"<p class='dsc'>"+data[i].goodsdsc+"</p>"+
+						"<h2 class='title'><a href='javascript:;'>"+data[i].goodsname+"</a></h2>"+
+						"<p class='price'>"+data[i].goodsprice+"<del>"+data[i].goodsdel+"</del></p>"+
+						"<div class='tu'>"+oImg+								
+						"</div>"+
+						"<div class='action'>"+
+							"<a href='javascript:;' class='btn1'>"+
+								"<i class=' fa fa-heart-o'></i>"+
+								"<span>喜欢</span>"+
+							"</a>"+
+							"<a href='javascript:;' class='btn2'>"+
+								"<span>加入购物车</span>"+
+								"<i class=' fa fa-cart-plus'></i>"+
+							"</a>"+
+						"</div>"+					
+					"</li>"	;
+//					console.log(oImg)	
+				//找到要添加的ul，然后添加			
+			}	
+//			console.log(oLi)
+			$(".list-con .list").html(oLi);
+			//console.log($(".list-con .list").html())
+		}
+		
+	})	
+//***************************************滑上小图切换大图*************************************
+	$(".list").on("mouseover",".tu img",function(){
+		var oSrc = $(this).attr("src"); 
+		$(this).parents().siblings(".pic").find("img").attr({"src":oSrc})
+	})
+//***************************************滑上大图小图标出现*************************************	
+	$(".list").on("mouseover","li",function(){
+		$(this).find(".action").find("i").stop().animate({
+			"opacity":1
+		},300);
+	});
+	$(".list").on("mouseout","li",function(){
+		$(this).find(".action").find("i").stop().animate({
+			"opacity":0
+		},300);
+	});
+	$(".list").on("mouseover","li .action i",function(){
+		$(this).siblings().stop().animate({
+			"opacity":1
+		},300);
+	});
+	$(".list").on("mouseout","li .action i",function(){
+		$(this).siblings().stop().animate({
+			"opacity":0
+		},300);
+	});
+//*************************************全部商品分类*************************************	
+	$(".pull").on({
+		"mouseover":function(){
+			$(".guide").show();
+		},
+		"mouseout":function(){
+			$(".guide").hide();
+		}
+	})
+	$(".guide").mouseover(function(){
+		$(".guide").show();
+	})
+	$(".guide").mouseout(function(){
+		$(".guide").hide();
+	})
+
+//****************************返回首页*************************************
+	$(".nav-con .hg").click(function(){
+		location.href="index.html";
+	})
+
+})
